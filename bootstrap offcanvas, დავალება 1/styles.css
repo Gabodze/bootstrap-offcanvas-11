@@ -1,0 +1,130 @@
+@font-face {
+    font-family: Inter;
+    src: url(./fonts/Inter-SemiBold.ttf);
+}
+
+p, h5, h2{
+    margin: 0;
+    padding: 0;
+}
+
+:root{
+    --Inter: 'Inter Semibold';
+    --Inter: 'Inter Regular';
+    --Inter: 'Inter Medium';
+
+
+    --p--: 14px;
+    --caption--:16px;
+    --capp--:20px;
+    --header--:30px;
+    
+    --ptext: #D1D5DB;
+    --labtext: #F9FAFB;
+}
+
+
+.burgermenu{
+    display: none;
+}
+
+.headerp{
+    color: var(--labtext);
+
+}
+
+.btn-Custom:hover{
+    color: white;
+}
+.btn-custom:hover {
+    color: white !important; /* Change text color to white on hover */
+}
+.row2{
+    height: 356px;
+}
+
+.cardsrow{
+    margin-top: 1px;
+}
+img{
+    width: 64px;
+}
+
+.contentBox{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 24px;
+    border-radius: 12px;
+    height: 356px;
+    box-shadow: 0 25px 25px rgba(0, 0, 0, 0.15);
+}
+
+.description, a{
+    color: var(--ptext);
+    font-family: var(--Inter-Regular);
+    font-size: var(--caption--);
+}
+
+.customer{
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+h5{
+    font-size: var(--capp--);
+    color: var(--labtext);
+}
+
+.founder{
+    font-size: var(--p--);
+    color: var(--ptext);
+}
+
+.navform2{
+    display: flex;
+    justify-content: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width:768px){
+    .navform{
+        display: none !important;
+    }
+    .burgermenu{
+        display: block;
+    }
+
+    .footerDivContent{
+        height: auto !important;
+        padding-top: 30px;
+        padding-bottom: 30px;
+        align-items: start !important;
+        display: flex;
+        gap: 24px;
+        flex-direction: column !important;
+    }
+    .navform2{
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+    }
+
+    .navform2>.btn{
+        padding: 0;
+
+    }
+}
+
